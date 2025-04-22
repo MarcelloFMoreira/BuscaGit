@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./GitHubProfileSearch.css";
+import GitLogo from './assets/GitLogo.png';
+import GitTXT from './assets/GitTXT.png';
+import Lupa from './assets/Lupa.png';
 
 export default function GitHubProfileSearch() {
     const [username, setUsername] = useState("");
@@ -35,9 +38,9 @@ export default function GitHubProfileSearch() {
         <div className="BG">
             <div className="ContainerGit">
                 <div className="TextoPrincipal">
-                    <img src="src\assets\GitLogo.png" alt="Logo GitHub" className="Logo" />
+                    <img src={GitLogo} alt="Logo GitHub" className="Logo" />    
                     <h1 className="TitleH1">Perfil</h1>
-                    <img src="src\assets\GitTXT.png" className="GitTxt" />
+                    <img src={GitTXT} className="GitTxt" />
                 </div>{/*TextoPrincipal*/}
                 <div className="BuscarInput">
                     <input
@@ -51,7 +54,7 @@ export default function GitHubProfileSearch() {
                         onClick={buscarPerfil}
                         className="BuscarButton"
                     >
-                        <img src="src\assets\Lupa.png" alt="Buscar" />
+                        <img src={Lupa} alt="Buscar" />
                     </button>
                 </div>
 
