@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./GitHubProfileSearch.css";
-import GitLogo from 'src/assets/GitLogo.png';
-import GitTXT from 'src/assets/GitTXT.png';
-import Lupa from 'src/assets/Lupa.png';
+import GitLogo from '../assets/GitLogo.png';
+import GitTXT from '../assets/GitTXT.png';
+import Lupa from '../assets/Lupa.png';
 
 export default function GitHubProfileSearch() {
     const [username, setUsername] = useState("");
