@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ContainerGit{
+    width: 1156px;
+    height: 537px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.TextoPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    margin-bottom: 27px;
+    padding-top: 51px;
+}
+
+.TextoPrincipal h1{
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0px 20px 0px 10px;
+}
+
+.TextoPrincipal .GitTxt{
+    width: 160px;
+    height: 45px;
+}
+
+.BuscarInput {
+    position: relative;
+    width: 503px;
+    margin: 0 auto 33px; 
+}
+
+.inputEscrever {
+    width: 100%;
+    height: 62px;
+    border-radius: 10px;
+    border: 1px solid #DDDDDD;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    padding-left: 15px;
+    padding-right: 62px; 
+    box-sizing: border-box;
+}
+
+.BuscarButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 62px;
+    border-radius: 10px;
+    border: none;
+    background-color: #005CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+}
+
+.inputEscrever::placeholder{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+
+.infosPerfil{
+    margin: 0 auto;
+    height: 257px;
+    width: 804px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    display: flex;
+}
+
+.infosPerfil .AvatarPerfil{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: solid 2px #005CFF;
+    margin: 18px 31px;
+
+}
+
+.infosPerfil .NomeDescrição{
+    width: 448px;
+    height: 123px;
+    margin: 68px  71px 66px 0px;
+}
+
+.NomeDescrição h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #005CFF;
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
+
+.NomeDescrição p{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+}
+
+.containerError{
+    width: 710px;
+    height: 88px;
+    margin: 0 auto;
+    background-color: #D9D9D9; 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+}
+
+.Error {
+    color: #FF0000; 
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    margin: auto 140px;
+}
+
+
+
+.Loading {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Loading::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 3px solid #999;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+    .BG {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url("/src/assets/bg.png");
+        background-size: cover; 
+        background-position: center; 
+    }
